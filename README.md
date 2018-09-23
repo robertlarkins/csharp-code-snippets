@@ -1,2 +1,8 @@
 # csharp-code-snippets
-Useful cod snippets for use with C# in Visual Studio
+Useful code snippets for use with C# in Visual Studio
+
+## Testing
+
+### Fact Test
+
+### Theory Test
