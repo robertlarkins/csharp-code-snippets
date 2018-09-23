@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>xUnit.Net Theory Test</Title>
+      <Author>Robert Larkins</Author>
+      <Description>Insert a template for an xUnit.net Theory test with Arrange, Act and Assert sections.</Description>
+      <Shortcut>ttest</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword>xUnit.net</Keyword>
+        <Keyword>xunit</Keyword>
+        <Keyword>Theory</Keyword>
+        <Keyword>AAA</Keyword>
+      </Keywords>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>TheoryType</ID>
+          <ToolTip>Replace with the type of DataAttribute for the theory test, the options are InlineData, MemberData or ClassData.</ToolTip>
+          <Default>InlineData</Default>
+        </Literal>
+        <Literal>
+          <ID>UnitBeingTested</ID>
+          <ToolTip>Replace with the name of the unit being tested.</ToolTip>
+          <Default>UnitBeingTested</Default>
+        </Literal>
+        <Literal>
+          <ID>StateUnderTest</ID>
+          <ToolTip>Replace with the state that is being tested for this unit.</ToolTip>
+          <Default>StateUnderTest</Default>
+        </Literal>
+        <Literal>
+          <ID>ExpectedBehaviour</ID>
+          <ToolTip>Replace with the expected behaviour or result expected from this unit for the given state.</ToolTip>
+          <Default>ExpectedBehaviour</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="method decl">
+        <![CDATA[[Theory]
+        [$TheoryType$()]
+        public void $UnitBeingTested$_$StateUnderTest$_$ExpectedBehaviour$()
+        {
+            // Arrange
+            $end$
+
+            // Act
+
+
+            // Assert
+
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
