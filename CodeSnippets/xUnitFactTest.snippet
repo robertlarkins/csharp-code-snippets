@@ -24,6 +24,11 @@
       </Imports>
       <Declarations>
         <Literal>
+          <ID>TestType</ID>
+          <ToolTip>Replace with the test return type, either void or async Task.</ToolTip>
+          <Default>void</Default>
+        </Literal>
+        <Literal>
           <ID>UnitBeingTested</ID>
           <ToolTip>Replace with the name of the unit being tested.</ToolTip>
           <Default>UnitBeingTested</Default>
@@ -41,7 +46,7 @@
       </Declarations>
       <Code Language="csharp" Kind="method decl">
         <![CDATA[[Fact]
-        public void $UnitBeingTested$_$StateUnderTest$_$ExpectedBehaviour$()
+        public $TestType $UnitBeingTested$_$StateUnderTest$_$ExpectedBehaviour$()
         {
             // Arrange
             $end$
