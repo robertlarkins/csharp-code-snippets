@@ -29,6 +29,11 @@
           <Default>InlineData</Default>
         </Literal>
         <Literal>
+          <ID>TestType</ID>
+          <ToolTip>Replace with the test return type, either void or async Task.</ToolTip>
+          <Default>void</Default>
+        </Literal>
+        <Literal>
           <ID>UnitBeingTested</ID>
           <ToolTip>Replace with the name of the unit being tested.</ToolTip>
           <Default>UnitBeingTested</Default>
@@ -47,7 +52,7 @@
       <Code Language="csharp" Kind="method decl">
         <![CDATA[[Theory]
         [$TheoryType$()]
-        public void $UnitBeingTested$_$StateUnderTest$_$ExpectedBehaviour$()
+        public $TestType $UnitBeingTested$_$StateUnderTest$_$ExpectedBehaviour$()
         {
             // Arrange
             $end$
